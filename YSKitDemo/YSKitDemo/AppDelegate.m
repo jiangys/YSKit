@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  YSKit
+//  YSKitDemo
 //
-//  Created by Jiangys on 16/5/2.
+//  Created by Jiangys on 16/5/14.
 //  Copyright © 2016年 Jiangys. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "YSLog.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    YSLog(@"application");
     return YES;
 }
 

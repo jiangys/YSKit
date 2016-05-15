@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  YSKit
+//  YSKitDemo
 //
-//  Created by Jiangys on 16/5/2.
+//  Created by Jiangys on 16/5/14.
 //  Copyright © 2016年 Jiangys. All rights reserved.
 //
 

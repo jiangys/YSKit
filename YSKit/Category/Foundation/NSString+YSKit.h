@@ -4,7 +4,7 @@
 //
 //  The MIT License (MIT)
 //
-//  Copyright (c) 2014 - 2016 Fabrizio Brancati. All rights reserved.
+//  Copyright (c) 2016 - 2018 Jiangys. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -132,22 +132,6 @@
  */
 - (BOOL)hasString:(NSString * _Nonnull)substring
     caseSensitive:(BOOL)caseSensitive;
-
-/**
- *  Check if self is an email
- *
- *  @return Returns YES if it's an email, NO if not
- */
-- (BOOL)isEmail;
-
-/**
- *  Check if the given string is an email
- *
- *  @param email The string to be checked
- *
- *  @return Returns YES if it's an email, NO if not
- */
-+ (BOOL)isEmail:(NSString * _Nonnull)email;
 
 /**
  *  Convert a string to UTF8
@@ -297,16 +281,39 @@
  */
 - (NSString * _Nonnull)convertToAPNSUUID;
 
+/**
+ *  @brief  清除html标签
+ *
+ *  @return 清除后的结果
+ */
+- (NSString * _Nonnull)stringByStrippingHTML;
 
 /**
- *  Used to calculate text height for max width and font
+ *  @brief  清除js脚本
  *
- *  @param width Max width to fit text
- *  @param font  Font used in text
- *
- *  @return Returns the calculated height of string within width using given font
+ *  @return 清楚js后的结果
  */
-- (CGFloat)heightForWidth:(float)width
-                  andFont:(UIFont * _Nonnull)font;
+- (NSString * _Nonnull)stringByRemovingScriptsAndStrippingHTML;
+
+/**
+ *  @brief  去除空格
+ *
+ *  @return 去除空格后的字符串
+ */
+- (NSString * _Nonnull)trimmingWhitespace;
+
+/**
+ *  @brief  去除字符串与空行
+ *
+ *  @return 去除字符串与空行的字符串
+ */
+- (NSString * _Nonnull)trimmingWhitespaceAndNewlines;
+
+/**
+ *  @brief  JSON字符串转成NSDictionary
+ *
+ *  @return NSDictionary
+ */
+- (NSDictionary * _Nonnull)dictionaryValue;
 
 @end

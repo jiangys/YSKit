@@ -4,7 +4,7 @@
 //
 //  The MIT License (MIT)
 //
-//  Copyright (c) 2014 - 2016 Fabrizio Brancati. All rights reserved.
+//  Copyright (c) 2016 - 2018 Jiangys. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -46,7 +46,7 @@
 }
 
 - (CGFloat)calculatedHeight {
-    return [self.text heightForWidth:self.frame.size.width andFont:self.font];
+    return [self.text heightWithFont:self.font constrainedToWidth:self.frame.size.width];
 }
 
 - (void)setFont:(UIFont * _Nonnull)font fromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex {

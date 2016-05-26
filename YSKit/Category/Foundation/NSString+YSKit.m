@@ -4,7 +4,7 @@
 //
 //  The MIT License (MIT)
 //
-//  Copyright (c) 2014 - 2016 Fabrizio Brancati. All rights reserved.
+//  Copyright (c) 2016 - 2018 Jiangys. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -112,17 +112,6 @@
     } else {
         return [self.lowercaseString rangeOfString:substring.lowercaseString].location != NSNotFound;
     }
-}
-
-- (BOOL)isEmail {
-    return [NSString isEmail:self];
-}
-
-+ (BOOL)isEmail:(NSString * _Nonnull)email {
-    NSString *emailRegEx = @"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
-	
-    NSPredicate *regExPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegEx];
-    return [regExPredicate evaluateWithObject:[email lowercaseString]];
 }
 
 + (NSString * _Nonnull)convertToUTF8Entities:(NSString * _Nonnull)string {
@@ -276,13 +265,65 @@
     return [[[self stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]] stringByReplacingOccurrencesOfString:@" " withString:@""] stringByReplacingOccurrencesOfString:@"-" withString:@""];
 }
 
-- (CGFloat)heightForWidth:(float)width andFont:(UIFont * _Nonnull)font {
-    CGSize size = CGSizeZero;
-    if (self.length > 0) {
-        CGRect frame = [self boundingRectWithSize:CGSizeMake(width, 999999) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName: font } context:nil];
-        size = CGSizeMake(frame.size.width, frame.size.height + 1);
+/**
+ *  @brief  清除html标签
+ *
+ *  @return 清除后的结果
+ */
+- (NSString * _Nonnull)stringByStrippingHTML {
+    return [self stringByReplacingOccurrencesOfString:@"<[^>]+>" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, self.length)];
+}
+
+/**
+ *  @brief  清除js脚本
+ *
+ *  @return 清楚js后的结果
+ */
+- (NSString * _Nonnull)stringByRemovingScriptsAndStrippingHTML {
+    NSMutableString *mString = [self mutableCopy];
+    NSError *error;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"<script[^>]*>[\\w\\W]*</script>" options:NSRegularExpressionCaseInsensitive error:&error];
+    NSArray *matches = [regex matchesInString:mString options:NSMatchingReportProgress range:NSMakeRange(0, [mString length])];
+    for (NSTextCheckingResult *match in [matches reverseObjectEnumerator]) {
+        [mString replaceCharactersInRange:match.range withString:@""];
     }
-    return size.height;
+    return [mString stringByStrippingHTML];
+}
+
+/**
+ *  @brief  去除空格
+ *
+ *  @return 去除空格后的字符串
+ */
+- (NSString * _Nonnull)trimmingWhitespace
+{
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+}
+
+/**
+ *  @brief  去除字符串与空行
+ *
+ *  @return 去除字符串与空行的字符串
+ */
+- (NSString * _Nonnull)trimmingWhitespaceAndNewlines
+{
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+/**
+ *  @brief  JSON字符串转成NSDictionary
+ *
+ *  @return NSDictionary
+ */
+- (NSDictionary * _Nonnull)dictionaryValue{
+    NSError *errorJson;
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:[self dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&errorJson];
+    if (errorJson != nil) {
+#ifdef DEBUG
+        NSLog(@"fail to get dictioanry from JSON: %@, error: %@", self, errorJson);
+#endif
+    }
+    return jsonDict;
 }
 
 @end

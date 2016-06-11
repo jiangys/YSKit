@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A04FB611CF6D98100A0F716 /* NSString+YSRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A04FB601CF6D98100A0F716 /* NSString+YSRegex.m */; };
+		5A04FB641CF6E03A00A0F716 /* NSString+YSSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A04FB631CF6E03A00A0F716 /* NSString+YSSize.m */; };
 		5A0FC5B41CE7811600B8556B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FC5B31CE7811600B8556B /* main.m */; };
 		5A0FC5B71CE7811600B8556B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FC5B61CE7811600B8556B /* AppDelegate.m */; };
 		5A0FC5BA1CE7811600B8556B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FC5B91CE7811600B8556B /* ViewController.m */; };
@@ -46,6 +48,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A04FB5F1CF6D98100A0F716 /* NSString+YSRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YSRegex.h"; sourceTree = "<group>"; };
+		5A04FB601CF6D98100A0F716 /* NSString+YSRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YSRegex.m"; sourceTree = "<group>"; };
+		5A04FB621CF6E03A00A0F716 /* NSString+YSSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YSSize.h"; sourceTree = "<group>"; };
+		5A04FB631CF6E03A00A0F716 /* NSString+YSSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YSSize.m"; sourceTree = "<group>"; };
 		5A0FC5AF1CE7811600B8556B /* YSKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0FC5B31CE7811600B8556B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A0FC5B51CE7811600B8556B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +136,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A04FB5E1CF6D46200A0F716 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		5A0FC5A61CE7811600B8556B = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +190,7 @@
 				5A0FC5CC1CE781FF00B8556B /* YSKit.h */,
 				5A0FC5CF1CE787FA00B8556B /* YSKit */,
 				5A0FC5CD1CE787FA00B8556B /* Category */,
+				5A04FB5E1CF6D46200A0F716 /* CustomUI */,
 				5A0FC5CE1CE787FA00B8556B /* Macro */,
 			);
 			name = YSKit;
@@ -235,6 +249,10 @@
 				5A1B7D4C1CE8AC160089521E /* NSProcessInfo+YSKit.m */,
 				5A1B7D4D1CE8AC160089521E /* NSString+YSKit.h */,
 				5A1B7D4E1CE8AC160089521E /* NSString+YSKit.m */,
+				5A04FB5F1CF6D98100A0F716 /* NSString+YSRegex.h */,
+				5A04FB601CF6D98100A0F716 /* NSString+YSRegex.m */,
+				5A04FB621CF6E03A00A0F716 /* NSString+YSSize.h */,
+				5A04FB631CF6E03A00A0F716 /* NSString+YSSize.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -364,9 +382,11 @@
 				5A1B7D891CE8AC220089521E /* UIToolbar+YSKit.m in Sources */,
 				5A1B7D951CE8B19B0089521E /* YSLog.m in Sources */,
 				5A1B7D541CE8AC160089521E /* NSMutableArray+YSKit.m in Sources */,
+				5A04FB641CF6E03A00A0F716 /* NSString+YSSize.m in Sources */,
 				5A1B7D821CE8AC220089521E /* UILabel+YSKit.m in Sources */,
 				5A1B7D7D1CE8AC220089521E /* UIColor+YSKit.m in Sources */,
 				5A0FC5BA1CE7811600B8556B /* ViewController.m in Sources */,
+				5A04FB611CF6D98100A0F716 /* NSString+YSRegex.m in Sources */,
 				5A1B7D4F1CE8AC160089521E /* NSArray+YSKit.m in Sources */,
 				5A1B7D7E1CE8AC220089521E /* UIDevice+YSKit.m in Sources */,
 				5A1B7D831CE8AC220089521E /* UINavigationBar+YSKit.m in Sources */,

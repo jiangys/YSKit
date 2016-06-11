@@ -4,7 +4,7 @@
 //
 //  The MIT License (MIT)
 //
-//  Copyright (c) 2014 - 2016 Fabrizio Brancati. All rights reserved.
+//  Copyright (c) 2016 - 2018 Jiangys. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@
 @import UIKit;
 
 #import "UIFont+YSKit.h"
-#import "NSString+YSKit.h"
+#import "NSString+YSSize.h"
 
 /**
  *  This category adds some useful methods to UILabel

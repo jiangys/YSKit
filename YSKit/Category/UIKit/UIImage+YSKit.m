@@ -28,7 +28,7 @@
 #import "NSNumber+YSKit.h"
 #import "UIColor+YSKit.h"
 #import "UIDevice+YSKit.h"
-#import "YSLog.h"
+#import "YSKitMacro.h"
 
 @implementation UIImage (YSKit)
 

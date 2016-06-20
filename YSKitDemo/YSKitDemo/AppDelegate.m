@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "YSLog.h"
+#import "YSKitMacro.h"
 
 @interface AppDelegate ()
 

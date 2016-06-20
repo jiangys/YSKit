@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "YSLog.h"
+#import "YSKitMacro.h"
 #import "YSCryptor.h"
 
 #import "NSArray+YSKit.h"

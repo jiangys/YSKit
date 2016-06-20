@@ -44,7 +44,6 @@
 		5A1B7D8B1CE8AC220089521E /* UIWebView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D791CE8AC220089521E /* UIWebView+YSKit.m */; };
 		5A1B7D8C1CE8AC220089521E /* UIWindow+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D7B1CE8AC220089521E /* UIWindow+YSKit.m */; };
 		5A1B7D8F1CE8AC900089521E /* YSCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D8E1CE8AC900089521E /* YSCryptor.m */; };
-		5A1B7D951CE8B19B0089521E /* YSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D941CE8B19B0089521E /* YSLog.m */; };
 		5A64AAB91D17B9C500135D92 /* YSCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A64AAB81D17B9C500135D92 /* YSCategoryViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -122,10 +121,9 @@
 		5A1B7D7B1CE8AC220089521E /* UIWindow+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+YSKit.m"; sourceTree = "<group>"; };
 		5A1B7D8D1CE8AC900089521E /* YSCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCryptor.h; sourceTree = "<group>"; };
 		5A1B7D8E1CE8AC900089521E /* YSCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCryptor.m; sourceTree = "<group>"; };
-		5A1B7D931CE8B19B0089521E /* YSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLog.h; sourceTree = "<group>"; };
-		5A1B7D941CE8B19B0089521E /* YSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLog.m; sourceTree = "<group>"; };
 		5A64AAB71D17B9C500135D92 /* YSCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCategoryViewController.h; sourceTree = "<group>"; };
 		5A64AAB81D17B9C500135D92 /* YSCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCategoryViewController.m; sourceTree = "<group>"; };
+		5A64AABE1D17EC1100135D92 /* YSKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSKitMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +193,6 @@
 				5A0FC5CF1CE787FA00B8556B /* YSKit */,
 				5A0FC5CD1CE787FA00B8556B /* Category */,
 				5A04FB5E1CF6D46200A0F716 /* CustomUI */,
-				5A0FC5CE1CE787FA00B8556B /* Macro */,
 			);
 			name = YSKit;
 			path = ../YSKit;
@@ -210,18 +207,10 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		5A0FC5CE1CE787FA00B8556B /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Macro;
-			sourceTree = "<group>";
-		};
 		5A0FC5CF1CE787FA00B8556B /* YSKit */ = {
 			isa = PBXGroup;
 			children = (
-				5A1B7D931CE8B19B0089521E /* YSLog.h */,
-				5A1B7D941CE8B19B0089521E /* YSLog.m */,
+				5A64AABE1D17EC1100135D92 /* YSKitMacro.h */,
 				5A1B7D8D1CE8AC900089521E /* YSCryptor.h */,
 				5A1B7D8E1CE8AC900089521E /* YSCryptor.m */,
 			);
@@ -394,7 +383,6 @@
 				5A1B7D581CE8AC160089521E /* NSProcessInfo+YSKit.m in Sources */,
 				5A1B7D851CE8AC220089521E /* UIScrollView+YSKit.m in Sources */,
 				5A1B7D891CE8AC220089521E /* UIToolbar+YSKit.m in Sources */,
-				5A1B7D951CE8B19B0089521E /* YSLog.m in Sources */,
 				5A1B7D541CE8AC160089521E /* NSMutableArray+YSKit.m in Sources */,
 				5A04FB641CF6E03A00A0F716 /* NSString+YSSize.m in Sources */,
 				5A1B7D821CE8AC220089521E /* UILabel+YSKit.m in Sources */,

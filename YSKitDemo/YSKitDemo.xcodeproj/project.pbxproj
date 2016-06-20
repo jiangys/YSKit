@@ -45,6 +45,7 @@
 		5A1B7D8C1CE8AC220089521E /* UIWindow+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D7B1CE8AC220089521E /* UIWindow+YSKit.m */; };
 		5A1B7D8F1CE8AC900089521E /* YSCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D8E1CE8AC900089521E /* YSCryptor.m */; };
 		5A1B7D951CE8B19B0089521E /* YSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D941CE8B19B0089521E /* YSLog.m */; };
+		5A64AAB91D17B9C500135D92 /* YSCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A64AAB81D17B9C500135D92 /* YSCategoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,8 @@
 		5A1B7D8E1CE8AC900089521E /* YSCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCryptor.m; sourceTree = "<group>"; };
 		5A1B7D931CE8B19B0089521E /* YSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLog.h; sourceTree = "<group>"; };
 		5A1B7D941CE8B19B0089521E /* YSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLog.m; sourceTree = "<group>"; };
+		5A64AAB71D17B9C500135D92 /* YSCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCategoryViewController.h; sourceTree = "<group>"; };
+		5A64AAB81D17B9C500135D92 /* YSCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCategoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,7 @@
 		5A0FC5B11CE7811600B8556B /* YSKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5A64AAB31D17B98C00135D92 /* Category */,
 				5A0FC5B51CE7811600B8556B /* AppDelegate.h */,
 				5A0FC5B61CE7811600B8556B /* AppDelegate.m */,
 				5A0FC5B81CE7811600B8556B /* ViewController.h */,
@@ -298,6 +302,15 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		5A64AAB31D17B98C00135D92 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5A64AAB71D17B9C500135D92 /* YSCategoryViewController.h */,
+				5A64AAB81D17B9C500135D92 /* YSCategoryViewController.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,6 +383,7 @@
 			files = (
 				5A1B7D8B1CE8AC220089521E /* UIWebView+YSKit.m in Sources */,
 				5A1B7D8F1CE8AC900089521E /* YSCryptor.m in Sources */,
+				5A64AAB91D17B9C500135D92 /* YSCategoryViewController.m in Sources */,
 				5A1B7D501CE8AC160089521E /* NSData+YSKit.m in Sources */,
 				5A1B7D8C1CE8AC220089521E /* UIWindow+YSKit.m in Sources */,
 				5A1B7D561CE8AC160089521E /* NSNumber+YSKit.m in Sources */,

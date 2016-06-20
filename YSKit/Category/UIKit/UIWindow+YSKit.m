@@ -30,7 +30,6 @@
 #import "UIDevice+YSKit.h"
 #import "UIImage+YSKit.h"
 
-
 @implementation UIWindow (YSKit)
 
 BOOL sendEventExchanged = NO;

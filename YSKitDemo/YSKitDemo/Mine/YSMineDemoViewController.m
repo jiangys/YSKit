@@ -38,13 +38,18 @@
     [self.groups addObject:group];
     
     // 2.设置组的所有行数据
-    YSMineCellItemArrow *newFriend = [YSMineCellItemArrow itemWithTitle:@"帐号管理"];
-    newFriend.destVcClass = [YSMineSettingViewController class];
+    YSMineCellItemArrow *accountManage = [YSMineCellItemArrow itemWithTitle:@"帐号管理"]; // 右边显示的是箭头
+    accountManage.destVcClass = [YSMineSettingViewController class]; // 设置点击该Cell要跳转的页面
+    accountManage.operation = ^(){  // 需要执行的Block
+        // 需要执行的代码
+    };
     
-    YSMineCellItemArrow *securityAccount = [YSMineCellItemArrow itemWithTitle:@"帐号安全"];
-    securityAccount.destVcClass = [YSMineSettingViewController class];
+    YSMineCellItemSwitch *notifition = [YSMineCellItemSwitch itemWithTitle:@"显示通知"]; // 右边显示的是开头
     
-    group.items = @[newFriend,securityAccount];
+    YSMineCellItemLabel *contactUs = [YSMineCellItemLabel itemWithTitle:@"联系我们"]; // 右边显示的是文本
+    contactUs.text = @"QQ:123456"; // 设置右边显示的文件
+    
+    group.items = @[accountManage,notifition,contactUs];
 }
 
 - (void)setupGroup1

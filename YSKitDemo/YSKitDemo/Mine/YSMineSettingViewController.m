@@ -99,7 +99,7 @@
         // 正在清除中...
     };
     
-    YSMineCellItemArrow *aboutUs = [YSMineCellItemArrow itemWithTitle:@"关于我们"];
+    YSMineCellItemSwitch *aboutUs = [YSMineCellItemSwitch itemWithTitle:@"显示通知"];
     
     YSMineCellItemLabel *contactUs = [YSMineCellItemLabel itemWithTitle:@"联系我们"];
     contactUs.text = @"QQ:123456";

@@ -113,6 +113,9 @@
         // 根据文字计算尺寸
         self.rightLabel.size = [itemLabel.text sizeMakeWithFont:self.rightLabel.font];
         self.accessoryView = self.rightLabel;
+    } else if ([item isKindOfClass:[YSMineCellItemSwitch class]])
+    {
+        self.accessoryView = self.rightSwitch;
     } else { // 取消右边的内容
         self.accessoryView = nil;
     }

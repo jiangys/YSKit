@@ -15,6 +15,10 @@
 		5A0FC5BD1CE7811600B8556B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FC5BB1CE7811600B8556B /* Main.storyboard */; };
 		5A0FC5BF1CE7811600B8556B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FC5BE1CE7811600B8556B /* Assets.xcassets */; };
 		5A0FC5C21CE7811600B8556B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FC5C01CE7811600B8556B /* LaunchScreen.storyboard */; };
+		5A1901F01D1A3748002962D3 /* YSMineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1901EF1D1A3748002962D3 /* YSMineSettingViewController.m */; };
+		5A1901F31D1A3841002962D3 /* YSMineCellDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1901F21D1A3841002962D3 /* YSMineCellDataSource.m */; };
+		5A1901F91D1A5D4E002962D3 /* YSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1901F81D1A5D4E002962D3 /* YSMineViewController.m */; };
+		5A1901FC1D1A6796002962D3 /* YSMineDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1901FB1D1A6796002962D3 /* YSMineDemoViewController.m */; };
 		5A1B7D4F1CE8AC160089521E /* NSArray+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D3A1CE8AC160089521E /* NSArray+YSKit.m */; };
 		5A1B7D501CE8AC160089521E /* NSData+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D3C1CE8AC160089521E /* NSData+YSKit.m */; };
 		5A1B7D511CE8AC160089521E /* NSDate+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D3E1CE8AC160089521E /* NSDate+YSKit.m */; };
@@ -45,6 +49,13 @@
 		5A1B7D8C1CE8AC220089521E /* UIWindow+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D7B1CE8AC220089521E /* UIWindow+YSKit.m */; };
 		5A1B7D8F1CE8AC900089521E /* YSCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B7D8E1CE8AC900089521E /* YSCryptor.m */; };
 		5A64AAB91D17B9C500135D92 /* YSCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A64AAB81D17B9C500135D92 /* YSCategoryViewController.m */; };
+		5A68B27E1D19186D000AB19C /* YSMineCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68B27D1D19186D000AB19C /* YSMineCellItem.m */; };
+		5A68B2811D1918D4000AB19C /* YSMineCellGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68B2801D1918D4000AB19C /* YSMineCellGroup.m */; };
+		5A68B28A1D191922000AB19C /* YSMineCellItemLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68B2891D191922000AB19C /* YSMineCellItemLabel.m */; };
+		5A68B28D1D19194E000AB19C /* YSMineCellItemArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68B28C1D19194E000AB19C /* YSMineCellItemArrow.m */; };
+		5A68B2901D191961000AB19C /* YSMineCellItemSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68B28F1D191961000AB19C /* YSMineCellItemSwitch.m */; };
+		5A68B2931D191A60000AB19C /* YSMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68B2921D191A60000AB19C /* YSMineCell.m */; };
+		5A68B2971D19321D000AB19C /* YSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68B2961D19321D000AB19C /* YSBadgeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +74,14 @@
 		5A0FC5C11CE7811600B8556B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0FC5C31CE7811600B8556B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A0FC5CC1CE781FF00B8556B /* YSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSKit.h; sourceTree = "<group>"; };
+		5A1901EE1D1A3748002962D3 /* YSMineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineSettingViewController.h; sourceTree = "<group>"; };
+		5A1901EF1D1A3748002962D3 /* YSMineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineSettingViewController.m; sourceTree = "<group>"; };
+		5A1901F11D1A3841002962D3 /* YSMineCellDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineCellDataSource.h; sourceTree = "<group>"; };
+		5A1901F21D1A3841002962D3 /* YSMineCellDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineCellDataSource.m; sourceTree = "<group>"; };
+		5A1901F71D1A5D4E002962D3 /* YSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineViewController.h; sourceTree = "<group>"; };
+		5A1901F81D1A5D4E002962D3 /* YSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineViewController.m; sourceTree = "<group>"; };
+		5A1901FA1D1A6796002962D3 /* YSMineDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineDemoViewController.h; sourceTree = "<group>"; };
+		5A1901FB1D1A6796002962D3 /* YSMineDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineDemoViewController.m; sourceTree = "<group>"; };
 		5A1B7D391CE8AC160089521E /* NSArray+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YSKit.h"; sourceTree = "<group>"; };
 		5A1B7D3A1CE8AC160089521E /* NSArray+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YSKit.m"; sourceTree = "<group>"; };
 		5A1B7D3B1CE8AC160089521E /* NSData+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YSKit.h"; sourceTree = "<group>"; };
@@ -124,6 +143,21 @@
 		5A64AAB71D17B9C500135D92 /* YSCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCategoryViewController.h; sourceTree = "<group>"; };
 		5A64AAB81D17B9C500135D92 /* YSCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCategoryViewController.m; sourceTree = "<group>"; };
 		5A64AABE1D17EC1100135D92 /* YSKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSKitMacro.h; sourceTree = "<group>"; };
+		5A68B27C1D19186D000AB19C /* YSMineCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineCellItem.h; sourceTree = "<group>"; };
+		5A68B27D1D19186D000AB19C /* YSMineCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineCellItem.m; sourceTree = "<group>"; };
+		5A68B27F1D1918D4000AB19C /* YSMineCellGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineCellGroup.h; sourceTree = "<group>"; };
+		5A68B2801D1918D4000AB19C /* YSMineCellGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineCellGroup.m; sourceTree = "<group>"; };
+		5A68B2881D191922000AB19C /* YSMineCellItemLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineCellItemLabel.h; sourceTree = "<group>"; };
+		5A68B2891D191922000AB19C /* YSMineCellItemLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineCellItemLabel.m; sourceTree = "<group>"; };
+		5A68B28B1D19194E000AB19C /* YSMineCellItemArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineCellItemArrow.h; sourceTree = "<group>"; };
+		5A68B28C1D19194E000AB19C /* YSMineCellItemArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineCellItemArrow.m; sourceTree = "<group>"; };
+		5A68B28E1D191961000AB19C /* YSMineCellItemSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineCellItemSwitch.h; sourceTree = "<group>"; };
+		5A68B28F1D191961000AB19C /* YSMineCellItemSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineCellItemSwitch.m; sourceTree = "<group>"; };
+		5A68B2911D191A60000AB19C /* YSMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMineCell.h; sourceTree = "<group>"; };
+		5A68B2921D191A60000AB19C /* YSMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMineCell.m; sourceTree = "<group>"; };
+		5A68B2941D191E1E000AB19C /* YSMine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMine.h; sourceTree = "<group>"; };
+		5A68B2951D19321D000AB19C /* YSBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSBadgeView.h; sourceTree = "<group>"; };
+		5A68B2961D19321D000AB19C /* YSBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSBadgeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +198,7 @@
 		5A0FC5B11CE7811600B8556B /* YSKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5A1901ED1D1A3724002962D3 /* Mine */,
 				5A64AAB31D17B98C00135D92 /* Category */,
 				5A0FC5B51CE7811600B8556B /* AppDelegate.h */,
 				5A0FC5B61CE7811600B8556B /* AppDelegate.m */,
@@ -192,6 +227,7 @@
 				5A0FC5CC1CE781FF00B8556B /* YSKit.h */,
 				5A0FC5CF1CE787FA00B8556B /* YSKit */,
 				5A0FC5CD1CE787FA00B8556B /* Category */,
+				5A68B27B1D19186D000AB19C /* Mine */,
 				5A04FB5E1CF6D46200A0F716 /* CustomUI */,
 			);
 			name = YSKit;
@@ -215,6 +251,17 @@
 				5A1B7D8E1CE8AC900089521E /* YSCryptor.m */,
 			);
 			path = YSKit;
+			sourceTree = "<group>";
+		};
+		5A1901ED1D1A3724002962D3 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				5A1901FA1D1A6796002962D3 /* YSMineDemoViewController.h */,
+				5A1901FB1D1A6796002962D3 /* YSMineDemoViewController.m */,
+				5A1901EE1D1A3748002962D3 /* YSMineSettingViewController.h */,
+				5A1901EF1D1A3748002962D3 /* YSMineSettingViewController.m */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		5A1B7CDD1CE8A9F70089521E /* Foundation */ = {
@@ -300,6 +347,32 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		5A68B27B1D19186D000AB19C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				5A68B2941D191E1E000AB19C /* YSMine.h */,
+				5A68B27C1D19186D000AB19C /* YSMineCellItem.h */,
+				5A68B27D1D19186D000AB19C /* YSMineCellItem.m */,
+				5A68B27F1D1918D4000AB19C /* YSMineCellGroup.h */,
+				5A68B2801D1918D4000AB19C /* YSMineCellGroup.m */,
+				5A68B2881D191922000AB19C /* YSMineCellItemLabel.h */,
+				5A68B2891D191922000AB19C /* YSMineCellItemLabel.m */,
+				5A68B28B1D19194E000AB19C /* YSMineCellItemArrow.h */,
+				5A68B28C1D19194E000AB19C /* YSMineCellItemArrow.m */,
+				5A68B28E1D191961000AB19C /* YSMineCellItemSwitch.h */,
+				5A68B28F1D191961000AB19C /* YSMineCellItemSwitch.m */,
+				5A68B2951D19321D000AB19C /* YSBadgeView.h */,
+				5A68B2961D19321D000AB19C /* YSBadgeView.m */,
+				5A68B2911D191A60000AB19C /* YSMineCell.h */,
+				5A68B2921D191A60000AB19C /* YSMineCell.m */,
+				5A1901F11D1A3841002962D3 /* YSMineCellDataSource.h */,
+				5A1901F21D1A3841002962D3 /* YSMineCellDataSource.m */,
+				5A1901F71D1A5D4E002962D3 /* YSMineViewController.h */,
+				5A1901F81D1A5D4E002962D3 /* YSMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,13 +446,17 @@
 				5A1B7D8B1CE8AC220089521E /* UIWebView+YSKit.m in Sources */,
 				5A1B7D8F1CE8AC900089521E /* YSCryptor.m in Sources */,
 				5A64AAB91D17B9C500135D92 /* YSCategoryViewController.m in Sources */,
+				5A1901F91D1A5D4E002962D3 /* YSMineViewController.m in Sources */,
 				5A1B7D501CE8AC160089521E /* NSData+YSKit.m in Sources */,
 				5A1B7D8C1CE8AC220089521E /* UIWindow+YSKit.m in Sources */,
 				5A1B7D561CE8AC160089521E /* NSNumber+YSKit.m in Sources */,
 				5A1B7D871CE8AC220089521E /* UITextField+YSKit.m in Sources */,
 				5A1B7D591CE8AC160089521E /* NSString+YSKit.m in Sources */,
 				5A1B7D7F1CE8AC220089521E /* UIFont+YSKit.m in Sources */,
+				5A68B2811D1918D4000AB19C /* YSMineCellGroup.m in Sources */,
 				5A1B7D571CE8AC160089521E /* NSObject+YSKit.m in Sources */,
+				5A1901FC1D1A6796002962D3 /* YSMineDemoViewController.m in Sources */,
+				5A68B2931D191A60000AB19C /* YSMineCell.m in Sources */,
 				5A1B7D581CE8AC160089521E /* NSProcessInfo+YSKit.m in Sources */,
 				5A1B7D851CE8AC220089521E /* UIScrollView+YSKit.m in Sources */,
 				5A1B7D891CE8AC220089521E /* UIToolbar+YSKit.m in Sources */,
@@ -392,14 +469,21 @@
 				5A1B7D4F1CE8AC160089521E /* NSArray+YSKit.m in Sources */,
 				5A1B7D7E1CE8AC220089521E /* UIDevice+YSKit.m in Sources */,
 				5A1B7D831CE8AC220089521E /* UINavigationBar+YSKit.m in Sources */,
+				5A68B2971D19321D000AB19C /* YSBadgeView.m in Sources */,
 				5A1B7D841CE8AC220089521E /* UIScreen+YSKit.m in Sources */,
 				5A1B7D7C1CE8AC220089521E /* UIButton+YSKit.m in Sources */,
 				5A1B7D881CE8AC220089521E /* UITextView+YSKit.m in Sources */,
 				5A1B7D551CE8AC160089521E /* NSMutableDictionary+YSKit.m in Sources */,
+				5A1901F31D1A3841002962D3 /* YSMineCellDataSource.m in Sources */,
+				5A68B28D1D19194E000AB19C /* YSMineCellItemArrow.m in Sources */,
 				5A1B7D811CE8AC220089521E /* UIImageView+YSKit.m in Sources */,
+				5A68B28A1D191922000AB19C /* YSMineCellItemLabel.m in Sources */,
+				5A68B27E1D19186D000AB19C /* YSMineCellItem.m in Sources */,
 				5A1B7D861CE8AC220089521E /* UITableView+YSKit.m in Sources */,
 				5A1B7D531CE8AC160089521E /* NSFileManager+YSKit.m in Sources */,
+				5A1901F01D1A3748002962D3 /* YSMineSettingViewController.m in Sources */,
 				5A1B7D521CE8AC160089521E /* NSDictionary+YSKit.m in Sources */,
+				5A68B2901D191961000AB19C /* YSMineCellItemSwitch.m in Sources */,
 				5A1B7D8A1CE8AC220089521E /* UIView+YSKit.m in Sources */,
 				5A1B7D511CE8AC160089521E /* NSDate+YSKit.m in Sources */,
 				5A0FC5B71CE7811600B8556B /* AppDelegate.m in Sources */,

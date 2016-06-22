@@ -99,6 +99,13 @@ typedef NS_ENUM(NSInteger, UIViewLinearGradientDirection) {
  */
 @interface UIView (YSKit)
 
+@property (assign, nonatomic) CGFloat x;
+@property (assign, nonatomic) CGFloat y;
+@property (assign, nonatomic) CGFloat width;
+@property (assign, nonatomic) CGFloat height;
+@property (assign, nonatomic) CGSize size;
+@property (assign, nonatomic) CGPoint origin;
+
 /**
  *  Create an UIView with the given frame and background color
  *

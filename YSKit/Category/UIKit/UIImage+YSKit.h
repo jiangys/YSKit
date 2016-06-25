@@ -24,11 +24,10 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-@import Foundation;
-@import UIKit;
-@import Accelerate;
-@import CoreImage;
-
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Accelerate/Accelerate.h>
+#import <CoreText/CoreText.h>
 #import "UIFont+YSKit.h"
 
 /**
